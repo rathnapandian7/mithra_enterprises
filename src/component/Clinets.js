@@ -1,7 +1,6 @@
 import React from "react";
 import "../style/Clients.css";
 function Clients() {
-  
   const Images = [
     {
       src: "/clients/craftsman-logo.webp",
