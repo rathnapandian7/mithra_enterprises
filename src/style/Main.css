@@ -1,45 +1,20 @@
-/* .container-slider { */
-/* width: 100%;
-  border: 2px solid red; */
-/* display: flex; */
-/* } */
-/* .content {
+.ref-container {
   width: 100%;
-  flex-direction: row;
-  border: 2px solid rgb(0, 255, 51);
-} */
-/* .content { */
-/* position: relative;
-  width: 100%;
-  flex-direction: row;
-  border: 2px solid rgb(0, 255, 51);
+  height: 100%;
+  display: flex;
+}
+
+.ref-main {
+  width: 1520px;
+  height: 600px;
+  animation: change 20s linear infinite;
+  animation-iteration-count: infinite;
+  position: relative;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  transition: 15s; */
-/* animation-name: animate; */
-/* background-image: url(../../public/front-img/4.jpg);
-  animation-direction: alternate-reverse;
-  animation-play-state: running;
-  animation-timing-function: ease-in-out;
-  animation-duration: 20s;
-  animation-iteration-count: infinite; */
-/* } */
-/* 
-.content {
-  display: flex;
-  overflow: hidden;
 }
 
-.content .img {
-  width: 1510px;
-  height: 600px;
-  animation: spin 2s linear infinite;
-  transition: all ease-in-out;
-  position: relative;
-}
-
-@keyframes animate {
+@keyframes change {
   0% {
     background-image: url(../../public/front-img/4.jpg);
   }
@@ -59,43 +34,85 @@
     background-image: url(../../public/safety/steel.avif);
   }
 }
+.text-main1 span {
+  position: absolute;
+  font-size: 50px;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  top: 150px;
+  left: 250px;
+  justify-content: center;
+  word-break: normal;
+  transition-delay: 250ms;
+  animation: scale 20s infinite linear;
+}
+.text-main1 ::before {
+  color: white;
+  content: "";
+  animation: change1 20s ease-in-out infinite;
+}
 
-@keyframes fadeInOut {
+.contactUs {
+  text-transform: uppercase;
+  align-items: center;
+  padding: 1px;
+  position: relative;
+  width: 100px;
+  height: 30px;
+  top: 200px;
+  left: 850px;
+  color: white;
+  background-color: black;
+  animation: slide-contact 10s linear;
+  border-radius: 50px;
+}
+
+@keyframes slide-contact {
+  from {
+    transform: translateX(280px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes slide-span {
+  from {
+    transform: translateX(-180px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes scale {
+  100% {
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+}
+@keyframes change1 {
   0% {
-    opacity: 0.9;
+    content: "PowerTools";
   }
-  25% {
-    opacity: 1;
+  20% {
+    content: "Industrial Safety Equipments";
   }
-  50% {
-    opacity: 0.12;
+  40% {
+    content: "Storage Solutions";
+  }
+  60% {
+    content: "Thermal Gas & Power Turbin";
+  }
+  80% {
+    content: "Refinery";
   }
   100% {
-    opacity: 1;
+    content: "Steel";
   }
-} */
-
-.ref-container {
-  width: 100%;
-  border: 2px solid red;
-  display: flex;
-}
-
-.ref-main {
-  
-  width: 100%;
-  flex-direction: row;
-  border: 2px solid rgb(0, 255, 51);
-}
-
-.ref-main ul {
-  display: flex;
-  overflow: hidden;
-}
-.ref-main ul li img {
-  width: 1510px;
-  height: 600px;
-  animation: refi 40s linear infinite;
-  transition: all ease-in-out;
-  position: relative;
 }

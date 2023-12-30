@@ -1,15 +1,15 @@
-.ref-container {
+/* .ref-container {
   width: 100%;
   border: 2px solid red;
   display: flex;
-}
+} */
 
-.ref-main {
+/* .ref-main { */
   /* justify-content: center;
   align-items: center;
   text-align: center;
   object-fit: cover; */
-  width: 100%;
+  /* width: 100%;
   flex-direction: row;
   border: 2px solid rgb(0, 255, 51);
 }
@@ -17,16 +17,52 @@
 .ref-main ul {
   display: flex;
   overflow: hidden;
-}
-.ref-main ul li img {
+} */
+/* .ref-main ul li img {
   width: 1510px;
   height: 600px;
-  animation: refi 40s linear infinite;
+  opacity: 0;
+  animation: refi 24s linear infinite;
+  animation-iteration-count: infinite;
   transition: all ease-in-out;
   position: relative;
 }
 
+li :nth-child(2) {
+  animation-delay: 0s;
+}
+li :nth-child(3) {
+  animation-delay: 6s;
+}
+li:nth-child(4) {
+  animation-delay: 12s;
+}
+li :nth-child(5) {
+  animation-delay: 18s;
+}
+li :nth-child(6) {
+  animation-delay: 24s;
+}
 
+@keyframes refi {
+  0% {
+    opacity: 0;
+    transform: scale(100%);
+  }
+  16.66% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  48.66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(110%);
+  }
+} */
 /* 
 @keyframes refi {
 

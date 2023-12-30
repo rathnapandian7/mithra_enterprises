@@ -3,6 +3,7 @@ import "../style/Clients.css";
 function Clients() {
   const Images = [
     {
+      
       src: "/clients/craftsman-logo.webp",
       alt: "banner1",
       order: "0",
