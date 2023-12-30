@@ -1,0 +1,41 @@
+.about-container {
+  width: 100%;
+  position: relative;
+  height: auto;
+  border: 2px solid rgb(208, 198, 198);
+  box-shadow:-1px -3px 10px rgba(0, 0, 0, 5)
+}
+.about-div-container {
+  /* margin: auto; */
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+
+}
+.abt-cpy {
+  width: 80%;
+  justify-content: flex-end;
+  margin: 10px auto 40px;
+}
+.abt-cpy h1 {
+  text-align: right;
+  border-bottom: 3px rgb(240, 239, 246) solid;
+  color: rgb(198, 71, 71);
+  position: relative;
+  font-size: 36px;
+}
+.abt-profile {
+  margin: 10px auto;
+  width: 80%;
+}
+.abt-profile h1 {
+  text-align: center;
+  color: #273272;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.abt-content {
+  margin: 20px auto 70px;
+  width: 80%;
+}

@@ -1,0 +1,64 @@
+.lt-animate-right {
+  /* bottom: 15%; */
+  position: relative;
+  animation: linear infinite;
+  animation-name: right;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+.lt-animate-left {
+  /* bottom: 15%; */
+  position: relative;
+  animation: linear infinite;
+  animation-name: left;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
+  animation-duration: 1s;
+  opacity: 1;
+}
+.lt-animate-top {
+  /* bottom: 15%; */
+  position: relative;
+  animation: linear infinite;
+  animation-name: left;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-duration: 1s ease;
+  opacity: 1;
+}
+@keyframes top {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0%;
+  }
+  /* 100% {
+      right: 0%;
+    } */
+}
+@keyframes right {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+  /* 100% {
+    right: 0%;
+  } */
+}
+@keyframes left {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0%;
+  }
+  /* 100% {
+    left: 0%;
+  } */
+}

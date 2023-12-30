@@ -1,0 +1,101 @@
+/* .container-slider { */
+/* width: 100%;
+  border: 2px solid red; */
+/* display: flex; */
+/* } */
+/* .content {
+  width: 100%;
+  flex-direction: row;
+  border: 2px solid rgb(0, 255, 51);
+} */
+/* .content { */
+/* position: relative;
+  width: 100%;
+  flex-direction: row;
+  border: 2px solid rgb(0, 255, 51);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 15s; */
+/* animation-name: animate; */
+/* background-image: url(../../public/front-img/4.jpg);
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; */
+/* } */
+/* 
+.content {
+  display: flex;
+  overflow: hidden;
+}
+
+.content .img {
+  width: 1510px;
+  height: 600px;
+  animation: spin 2s linear infinite;
+  transition: all ease-in-out;
+  position: relative;
+}
+
+@keyframes animate {
+  0% {
+    background-image: url(../../public/front-img/4.jpg);
+  }
+  20% {
+    background-image: url(../../public/safety/safety.jpg);
+  }
+  40% {
+    background-image: url(../../public/safety/storate-spl.jpg);
+  }
+  60% {
+    background-image: url(../../public/safety/thermal2.jpg);
+  }
+  80% {
+    background-image: url(../../public/safety/refinery.jpg);
+  }
+  100% {
+    background-image: url(../../public/safety/steel.avif);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.9;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.12;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.ref-container {
+  width: 100%;
+  border: 2px solid red;
+  display: flex;
+}
+
+.ref-main {
+  
+  width: 100%;
+  flex-direction: row;
+  border: 2px solid rgb(0, 255, 51);
+}
+
+.ref-main ul {
+  display: flex;
+  overflow: hidden;
+}
+.ref-main ul li img {
+  width: 1510px;
+  height: 600px;
+  animation: refi 40s linear infinite;
+  transition: all ease-in-out;
+  position: relative;
+}

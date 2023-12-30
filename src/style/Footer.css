@@ -1,0 +1,127 @@
+/* .space {
+  height: 10px;
+  background-color: rgb(54, 51, 51);
+  border: 2px solid red;
+} */
+.footer {
+  border: 2px solid rgb(10, 10, 10);
+  height: 350px;
+  background-color: rgba(6, 82, 221, 1);
+  bottom: 0;
+}
+.rowcontent img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+.row {
+  width: 100%;
+}
+.rowmain {
+  margin: 15px;
+  /* border: 2px solid greenyellow; */
+}
+.rowheader {
+  margin: 60px auto 2px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+.rowheader div {
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+  width: 25%;
+  height: auto;
+}
+
+.rowcontent {
+  margin: 0px auto 2px;
+  width: 80%;
+  display: flex;
+  /* border: 2px solid rgb(28, 206, 52); */
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+}
+.product i {
+  margin: 10px;
+}
+.rowcontent div {
+  color: white;
+  width: 25%;
+  height: auto;
+  /* border: 2px solid rgb(28, 206, 52); */
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 7px;
+}
+.contact i {
+  margin: 9px;
+  color: white;
+  word-break: break-all;
+  word-spacing: 3px;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  /* padding: 20px; */
+  margin-left: 17px;
+  word-spacing: 3px;
+}
+.social i {
+  margin: 0 30px;
+  color: white;
+}
+
+.social .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.social.fa:hover {
+  opacity: 0.7;
+}
+.social .fa-facebook {
+  border-radius: 50px;
+  height: 50px;
+  background: #3b5998;
+  color: white;
+}
+
+.social .fa-twitter {
+  border-radius: 50px;
+  height: 50px;
+  background: #55acee;
+  color: white;
+}
+.social .fa-youtube {
+  background: #bb0000;
+  color: white;
+  border-radius: 50px;
+  height: 50px;
+}
+.social .fa-instagram {
+  border-radius: 50px;
+  height: 50px;
+  background-image: linear-gradient(
+    rgb(218, 20, 125),
+    rgb(245, 42, 42),
+    yellow
+  );
+  color: white;
+}

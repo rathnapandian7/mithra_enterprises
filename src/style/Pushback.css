@@ -1,0 +1,41 @@
+.push-types {
+  width: 100%;
+  min-height: 500px;
+}
+
+.push {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.push-header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 24px;
+}
+.push-div {
+  margin: auto;
+  width: 32%;
+}
+
+.push-div img {
+  margin: auto;
+  width: 380px;
+  height: 300px;
+}
+
+.push-div1 {
+  position: relative;
+  width: 100%;
+  min-height: 40px;
+  text-transform: uppercase;
+  color: white(149, 146, 146);
+  text-align: center;
+  height: 30px;
+  width: auto;
+  margin-bottom: 10px;
+  font-size: 20px;
+}

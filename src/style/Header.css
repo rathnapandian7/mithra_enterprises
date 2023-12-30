@@ -1,0 +1,58 @@
+ul {
+  list-style: none;
+}
+
+header {
+  padding: 0.5rem 0 0;
+}
+/* Comapany name stylee */
+
+.companyName {
+  color: white;
+  font-size: 26px;
+  margin: 10px;
+}
+#Headernav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headermenu {
+  background-color: rgba(6, 82, 221,1.0);
+  text-align: right;
+  width: 100%;
+}
+
+.headermenu > li,
+.headermenu > i {
+  display: inline-block;
+  transition: background-color 0.22s ease, color 0.22s ease;
+}
+.headermenu li {
+  padding: 10px;
+}
+.headermenu i {
+  margin-left: 40px;
+  text-align: center;
+  border: white 2px solid;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 1rem;
+  transition: background-color 0.22s ease, color 0.22s ease;
+}
+#Headernav img {
+  margin-top: 9px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.headermenu i:hover {
+  background-color: #e61313;
+}
