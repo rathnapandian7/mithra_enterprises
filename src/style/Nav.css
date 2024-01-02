@@ -4,8 +4,7 @@
   z-index: 1;
   align-items: center;
   display: flex;
-  /* border-top: 4px solid gold; */
-  border-bottom: 3px solid rgb(12, 57, 237);
+  /* border-bottom: 3px solid rgb(12, 57, 237); */
 }
 .logo-cont {
   /* border: 2px solid rgb(28, 2, 2); */
@@ -44,6 +43,9 @@
   margin: 10px;
 }
 .companyName .div1 {
+  text-shadow: 2px 2px rgb(213, 204, 204);
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
   position: relative;
   top: -25px;
   font-weight: 900;
@@ -51,11 +53,13 @@
   font-size: 70px;
 }
 .companyName .div2 {
+  text-shadow: 2px 2px rgb(213, 204, 204);
   position: relative;
   top: -50px;
   font-weight: 500;
   text-align: left;
-  font-size: 13px;
+  font-size: 18px;
+  letter-spacing: 3px;
 }
 
 .companyName .span1 {
@@ -64,27 +68,13 @@
 .companyName .span2 {
   color: rgb(228, 13, 13);
 }
-.companyName {
-  /* margin: 0 0 0 60px; */
-  /* display: flex;
-  text-align: left;
-  justify-content: center;
-  text-shadow: 2px 2px rgb(213, 204, 204);
-  position: relative;
-  color: rgb(127, 127, 126); */
-  /* border: 2px solid red; */
-  /* align-items: center;
-  height: 75px; */
-  /* display: block; */
-  /* left: 0%; */
-}
+
 .menu-container {
   width: 60%;
 }
 .menu {
   margin: auto;
   width: 100%;
-  /* height: 70px; */
   background-color: white(72, 52, 212, 1);
   text-align: center;
   align-items: center;
@@ -105,8 +95,6 @@
   padding: 10px 1.5rem;
   transition: background-color 0.22s ease, color 0.22s ease;
   font-weight: 800;
-  /* font-family: 'Times New Roman', Times, serif; */
-  /* font-family: 'Times New Roman', Times, serif; */
 }
 
 .menu a:hover {
@@ -121,7 +109,7 @@
 .submenu {
   position: absolute;
   background-color: white;
-  left: 0;
+  /* left: 10px; */
   display: none;
   white-space: nowrap;
   animation: slideup 0.3s ease;
@@ -132,7 +120,7 @@
   position: absolute;
   background-color: white;
   left: 100%;
-  top: -9px;
+  /* top: -9px; */
   display: none;
   animation: slideleft 0.3s ease;
   text-align: left;
@@ -160,7 +148,7 @@
 .submenu li a {
   text-transform: capitalize;
   font-size: 14px;
-  line-height: 7px;
+  line-height: 10px;
 }
 /* Aniamtions */
 
@@ -183,5 +171,126 @@
   100% {
     opacity: 1;
     transform: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .navmenu {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid rgb(12, 57, 237) !important;
+  }
+  .menu-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    top: 81px;
+    text-align: center;
+    justify-content: center;
+    /* border: 2px solid rgb(47, 182, 255); */
+  }
+  .logo-cont {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid rgb(255, 165, 47); */
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .logo {
+    display: flex;
+    width: 100%;
+  }
+  .logo img {
+    border-bottom: 2px 2px rgb(224, 219, 219);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
+    border-radius: 50%;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: -50px;
+    top: -10px;
+  }
+
+  .companyName {
+    display: flex;
+    text-shadow: 2px 2px rgb(213, 204, 204);
+    width: 100%;
+    flex-direction: column;
+    margin: 10px;
+    height: 70px;
+  }
+  .companyName .div1 {
+    text-transform: uppercase;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    width: 100%;
+    position: relative;
+    top: -15px;
+    right: 56px;
+    font-weight: 800;
+    text-align: left;
+    font-size: 40px;
+  }
+  .companyName .div2 {
+    position: relative;
+    width: 40%;
+    top: -30px;
+    left: -69px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .menu {
+    margin: auto;
+    width: 70%;
+    background-color: white(72, 52, 212, 1);
+    text-align: right;
+    align-items: center;
+    display: block;
+    position: relative;
+    right: -130px;
+  }
+  .menu > li,
+  .menu > a {
+    display: inline-block;
+    transition: background-color 0.22s ease, color 0.22s ease;
+  }
+  .menu a {
+    text-align: left;
+    text-decoration: none;
+    font-size: 10px;
+    top: 30px;
+    display: block;
+    margin: 2px 0;
+    line-height: 10px;
+    padding: 2px 1.5rem;
+    transition: background-color 0.22s ease, color 0.22s ease;
+    font-weight: 800;
+  }
+
+  .submenu {
+    position: absolute;
+    background-color: white;
+    top: 20px;
+    display: none;
+    animation: slideleft 0.3s ease;
+    text-align: left;
+  }
+
+  .menu li:hover > .submenu {
+    font-size: 8px;
+    display: block;
+  }
+  .submenu li a {
+    text-transform: capitalize;
+    font-size: 10px;
+    line-height: 14px;
   }
 }

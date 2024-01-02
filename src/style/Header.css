@@ -8,7 +8,7 @@ header {
 /* Comapany name stylee */
 
 .companyName {
-  color: white;
+  color: white(18, 15, 15);
   font-size: 26px;
   margin: 10px;
 }
@@ -23,7 +23,7 @@ header {
   align-items: center;
 }
 .headermenu {
-  background-color: rgba(6, 82, 221,1.0);
+  background-color: rgba(6, 82, 221, 1);
   text-align: right;
   width: 100%;
 }
@@ -55,4 +55,52 @@ header {
 
 .headermenu i:hover {
   background-color: #e61313;
+}
+
+@media screen and (width<= 720px) {
+  #Headernav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    /* border: 4px solid rgb(0, 255, 42); */
+  }
+  .headermenu {
+    /* border: 4px solid rgb(15, 1, 10); */
+    width: 100%;
+    display: flex;
+    width: 720px;
+  }
+  .headermenu li {
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    text-align: right;
+    position: relative;
+  }
+}
+
+@media screen and (width<= 560px) {
+  #Headernav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    /* border: 4px solid rgb(0, 255, 42); */
+  }
+  .headermenu {
+    /* border: 4px solid rgb(15, 1, 10); */
+    width: 100%;
+    display: flex;
+    width: 560px;
+  }
+  .headermenu li {
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    text-align: right;
+    position: relative;
+  }
 }

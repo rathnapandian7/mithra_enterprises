@@ -43,6 +43,15 @@ function Nav() {
                 <li>
                   <Link to="/steels">Steel</Link>
                 </li>
+                <li>
+                  <Link to="/refinery">Scaffolding</Link>
+                </li>
+                <li>
+                  <Link to="/refinery">Sales</Link>
+                </li>
+                <li>
+                  <Link to="/refinery">Rental</Link>
+                </li>
                 {/* <ul className="submenu1">
                   <li>
                     <Link to="/lt">L&T</Link>

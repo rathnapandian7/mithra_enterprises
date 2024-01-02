@@ -1,7 +1,5 @@
 import React from "react";
-
 import "../style/Products_home.css";
-
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
 import Rotate from "react-reveal/Rotate";
@@ -60,7 +58,6 @@ function Products_home() {
           </div>
         </Roll>
       </div>
-      {/* storage */}
       <div className="thermal_container">
         <Slide right>
           <div className="thermal_content">

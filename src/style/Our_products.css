@@ -107,3 +107,83 @@
       left: 0%;
     } */
 }
+@media screen and (max-width: 720px) {
+  .our_prod_container {
+    width: 100%;
+    margin: 70px auto;
+    min-height: 10px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      rgba(212, 153, 153, 0.5),
+      rgba(168, 230, 137, 0.658)
+    );
+  }
+
+  .prod-header {
+    position: relative;
+    top: 85px;
+    left: 0px;
+    border-top: 4px solid rgb(22, 21, 21);
+    width: 22%;
+    text-align: center;
+    margin: 40px auto;
+    /* min-height: 60px; */
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .main-cont {
+    position: relative;
+    top: 30px;
+    padding-bottom: 40px;
+    margin: auto;
+    width: 80%;
+    min-height: 350px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .prod-div {
+    min-height: 100px;
+    width: 32%;
+    background-color: white;
+  }
+  .prod-div img {
+    display: block;
+    width: 100%;
+    height: 100px;
+  }
+   .prod-text {
+    /* margin: auto; */
+    width: 80%;
+    position: relative;
+    top: 10px;
+    line-height: 10px;
+  } 
+
+  .prod-text h3 {
+    margin: 10px auto;
+    color: black;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .prod-text h5 {
+    color: rgb(184, 178, 178);
+    text-transform: capitalize;
+    font-size: 8px;
+    font-family: sans-serif;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}

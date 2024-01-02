@@ -64,13 +64,13 @@
   left: 850px;
   color: white;
   background-color: black;
-  animation: slide-contact 10s linear;
+  animation: slide-contact 3s linear;
   border-radius: 50px;
 }
 
 @keyframes slide-contact {
   from {
-    transform: translateX(280px);
+    transform: translateX(100px);
   }
   to {
     transform: translateX(0px);
@@ -114,5 +114,66 @@
   }
   100% {
     content: "Steel";
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .ref-container {
+    top: 150px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .ref-main {
+    width: 720px;
+    height: 350px;
+    animation: change 20s linear infinite;
+    animation-iteration-count: infinite;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+  .text-main1 span {
+    position: absolute;
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    top: 55px;
+    color: greenyellow;
+    left: 45px;
+    justify-content: center;
+    word-break: normal;
+    transition-delay: 250ms;
+    animation: scale 20s infinite linear;
+  }
+  .text-main1 ::before {
+    color: white;
+    content: "";
+    animation: change1 20s ease-in-out infinite;
+  }
+
+  .contactUs {
+    text-transform: uppercase;
+    align-items: center;
+    padding: 1px;
+    position: relative;
+    width: 60px;
+    height: 20px;
+    /* top: 120px; */
+    left: 50px;
+    color: white;
+    background-color: rgb(48, 12, 226);
+    animation: slide-contact 10s linear;
+    border-radius: 50px;
+  }
+  .contactUs p {
+    position: relative;
+    top: 3px;
+    align-items: center;
+    text-align: center;
+    font-size: 8px;
   }
 }
