@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "../style/RentSales.css";
 import Footer from "./Footer";
 import Nav from "./Nav";
