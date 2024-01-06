@@ -149,6 +149,7 @@ thermal_content {
   justify-content: center;
   width: 100%;
   height: 50px;
+  border-radius: 10px;
 }
 a {
   color: white;
@@ -184,6 +185,7 @@ a {
 .animate-power::before {
   content: "";
   position: absolute;
+  border-radius: 20px;
   top: 0;
   left: 0;
   width: 100%;
@@ -192,12 +194,9 @@ a {
   z-index: -1;
   transform-origin: right;
   transition: transform 0.2s ease-in-out;
-  /* transform: scaleX(1); */
   color: white;
 }
-/* .animate-power :hover {
-  transition: 0.3s;
-} */
+
 .animate-power:hover::before {
   transform-origin: right;
   transition: transform 0.3s ease;
@@ -213,6 +212,7 @@ a {
   display: flex;
   width: 20%;
   height: 40px;
+  border-radius: 20px;
   text-transform: capitalize;
   position: relative;
   color: white(246, 7, 7);
@@ -431,7 +431,6 @@ a {
     transition: ease 3s;
     opacity: 1;
   }
-
 
   .button-container {
     align-items: center;

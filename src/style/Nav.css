@@ -1,10 +1,10 @@
 .navmenu {
-  position: relative;
-  top: 0;
+  /* position: re; */
+  width: 100%;
+  /* top: 0; */
   z-index: 1;
   align-items: center;
   display: flex;
-  /* border-bottom: 3px solid rgb(12, 57, 237); */
 }
 .logo-cont {
   /* border: 2px solid rgb(28, 2, 2); */
@@ -109,7 +109,6 @@
 .submenu {
   position: absolute;
   background-color: white;
-  /* left: 10px; */
   display: none;
   white-space: nowrap;
   animation: slideup 0.3s ease;
@@ -119,8 +118,9 @@
 .submenu1 {
   position: absolute;
   background-color: white;
+  display: block;
+  top: -5px;
   left: 100%;
-  /* top: -9px; */
   display: none;
   animation: slideleft 0.3s ease;
   text-align: left;
@@ -137,6 +137,7 @@
 .menu li:hover > .submenu {
   font-size: 14px;
   display: block;
+  /* border: 2px solid red; */
 }
 
 .submenu li:hover .submenu1 {

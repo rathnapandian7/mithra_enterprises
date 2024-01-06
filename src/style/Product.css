@@ -3,9 +3,11 @@
   position: relative;
   width: 80%;
   margin: auto;
+  z-index: -1;
 }
 .product-inner-left,
 .product-inner-right {
+
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +21,7 @@
 }
 
 .div-outer {
+ 
   align-items: center;
   margin: 30px 3px 30px;
   width: 30%;
@@ -33,10 +36,7 @@
   animation-duration: 1s;
   opacity: 1;
 }
-/* .animate-right:hover,
-.animate-left:hover {
-  animation-play-state: paused;
-} */
+
 .animate-left {
   bottom: 15%;
   position: relative;

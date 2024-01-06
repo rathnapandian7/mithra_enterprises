@@ -1,8 +1,4 @@
-/* .space {
-  height: 10px;
-  background-color: rgb(54, 51, 51);
-  border: 2px solid red;
-} */
+
 .footer {
   border: 2px solid rgb(10, 10, 10);
   height: 350px;
@@ -44,7 +40,6 @@
   margin: 0px auto 2px;
   width: 80%;
   display: flex;
-  /* border: 2px solid rgb(28, 206, 52); */
 }
 .product {
   display: flex;

@@ -5,7 +5,6 @@ import Jello from "react-reveal/Jello";
 import { Link } from "react-router-dom";
 function Our_products() {
   return (
-    // <div className="our_prod_container">
     <div className="our_prod_container">
       <div className="prod-header">Products</div>
       <div className="main-cont">
@@ -16,7 +15,6 @@ function Our_products() {
               <h3>
                 <Link to="pushback">PUSH PACK RACKING</Link>
               </h3>
-
               <h5>
                 Push-back racking is also designed for first-in, first-out
                 (FIFO) inventory management, which means that you can keep your
@@ -58,7 +56,6 @@ function Our_products() {
         </LightSpeed>
       </div>
     </div>
-    // </div>
   );
 }
 

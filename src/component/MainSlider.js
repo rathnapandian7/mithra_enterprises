@@ -7,9 +7,9 @@ function MainSlider() {
         <div className="text-main1">
           <span></span>
         </div>
-        <div className="contactUs">
+        {/* <div className="contactUs">
           <p>Contact US</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ function Footer() {
           <LightSpeed bottom>
             <div className="contact">
               <i class="fa fa-envelope-square"> meenquiry74@gmail.com</i>
-              <i class="fa fa-phone"> 9443752043/7904757806</i>
+              <i class="fa fa-phone"> 8122652043/7904757806</i>
               <i class="fas fa-map-marker-alt">
                 No:1/119 GANDHI STREET,PERIYAKOTTTUMULAI,VIRUDHACHALAM
                 TALUK,CUDDALORE DIST,TAMIL NADU -606103

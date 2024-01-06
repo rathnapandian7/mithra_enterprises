@@ -1,11 +1,15 @@
 .ref-container {
+  
+  border: 2px solid white;
+  position: relative;
   width: 100%;
   height: 100%;
+  z-index: -1;
   display: flex;
 }
 
 .ref-main {
-  width: 1520px;
+  width:100%;
   height: 600px;
   animation: change 20s linear infinite;
   animation-iteration-count: infinite;
@@ -25,13 +29,13 @@
     background-image: url(../../public/safety/storate-spl.jpg);
   }
   60% {
-    background-image: url(../../public/safety/thermal2.jpg);
+    background-image: url(../../public/front-img/therm.jpg);
   }
   80% {
-    background-image: url(../../public/safety/refinery.jpg);
+    background-image: url(../../public/front-img/refin.jpg);
   }
   100% {
-    background-image: url(../../public/safety/steel.avif);
+    background-image: url(../../public/front-img/steel.avif);
   }
 }
 .text-main1 span {

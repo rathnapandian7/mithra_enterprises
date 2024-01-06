@@ -6,7 +6,7 @@ function Nav() {
     <div className="navmenu">
       <div className="logo-cont">
         <div className="logo">
-          <img src="/logo.png" alt="logo" />
+          <img src="/logo2.jpg" alt="logo" />
           <div className="companyName">
             <div className="div1">mithra</div>
             <div className="div2">Engineering & Enterprises</div>
@@ -24,35 +24,41 @@ function Nav() {
           <li>
             <Link to="/service">Service</Link>
             <ul className="submenu">
+              {/* <li> */}
               <li>
-                <li>
-                  <Link to="/powertools">power Tools</Link>
-                </li>
-                <li>
-                  <Link to="/thermal">Thermal gas & Power turbin</Link>
-                </li>
-                <li>
-                  <Link to="/safetytools">Industrial Safety Equipments</Link>
-                </li>
-                <li>
-                  <Link to="/storage">Storage Solutions</Link>
-                </li>
-                <li>
-                  <Link to="/refinery">Refinery</Link>
-                </li>
-                <li>
-                  <Link to="/steels">Steel</Link>
-                </li>
-                <li>
-                  <Link to="/refinery">Scaffolding</Link>
-                </li>
-                <li>
+                <Link to="/powertools">power Tools</Link>
+              </li>
+              <li>
+                <Link to="/thermal">Thermal gas & Power turbin</Link>
+              </li>
+              <li>
+                <Link to="/safetytools">Industrial Safety Equipments</Link>
+              </li>
+              <li>
+                <Link to="/storage">Storage Solutions</Link>
+              </li>
+              <li>
+                <Link to="/refinery">Refinery</Link>
+              </li>
+              <li>
+                <Link to="/steels">Steel</Link>
+              </li>
+              <li>
+                <Link to="/refinery">Scaffolding</Link>
+                <ul className="submenu1">
+                  <li>
+                    <Link to="/rent">Rental&Sales</Link>
+                  </li>
+                  
+                </ul>
+              </li>
+              {/* <li>
                   <Link to="/refinery">Sales</Link>
                 </li>
                 <li>
                   <Link to="/refinery">Rental</Link>
-                </li>
-                {/* <ul className="submenu1">
+                </li> */}
+              {/* <ul className="submenu1">
                   <li>
                     <Link to="/lt">L&T</Link>
                   </li>
@@ -60,7 +66,7 @@ function Nav() {
                     <Link to="/storage">Storage Solutions</Link>
                   </li>
                 </ul> */}
-              </li>
+              {/* </li> */}
               {/* <li>
                 <Link>Enterprises</Link>
                 <ul className="submenu2">

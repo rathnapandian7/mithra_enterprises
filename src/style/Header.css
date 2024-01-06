@@ -23,6 +23,9 @@ header {
   align-items: center;
 }
 .headermenu {
+  z-index: 99;
+  position: fixed;
+  top: 0;
   background-color: rgba(6, 82, 221, 1);
   text-align: right;
   width: 100%;
