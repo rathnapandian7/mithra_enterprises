@@ -3,17 +3,26 @@ import "../style/Our_products.css";
 import LightSpeed from "react-reveal/LightSpeed";
 import Jello from "react-reveal/Jello";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 function Our_products() {
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    navigate("/" + e);
+  };
   return (
     <div className="our_prod_container">
       <div className="prod-header">Products</div>
       <div className="main-cont">
         <LightSpeed right>
           <div className="prod-div">
-            <img src="../Longspan/longspan1.jpg" alt="{img.alt}" />
+            <img
+              src="../Longspan/longspan1.jpg"
+              alt="{img.alt}"
+              onClick={() => handleClick("pushback")}
+            />
             <div className="prod-text">
               <h3>
-                <Link to="pushback">PUSH PACK RACKING</Link>
+                <Link to="/pushback">PUSH PACK RACKING</Link>
               </h3>
               <h5>
                 Push-back racking is also designed for first-in, first-out
@@ -25,7 +34,8 @@ function Our_products() {
         </LightSpeed>
         <Jello>
           <div className="prod-div lt-animate-left">
-            <img src="../Pallet_racking/pallet1.jpg" alt="{img.alt}" />
+            <img src="../Pallet_racking/pallet1.jpg" alt="{img.alt}" onClick={() => handleClick("pallet")}
+            />
             <div className="prod-text">
               <h3>
                 <Link to="/pallet">Pallet Racking</Link>
@@ -41,10 +51,10 @@ function Our_products() {
         </Jello>
         <LightSpeed left>
           <div className="prod-div lt-animate-right">
-            <img src="../Mezzanine/mezz2.webp" alt="{img.alt}" />
+            <img src="../Mezzanine/mezz2.webp" alt="{img.alt}" onClick={() => handleClick("mezzanine")} />
             <div className="prod-text">
               <h3>
-                <Link to="mezzanine">Mezzanine Racking</Link>
+                <Link to="/mezzanine">Mezzanine Racking</Link>
               </h3>
               <h5>
                 Mezzanine floor racking systems let your company optimize the

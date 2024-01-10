@@ -1,5 +1,7 @@
 .powercontent {
   z-index: -1;
+  position: relative;
+  top: 10px;
   border-top: 2px solid rgb(50, 28, 246);
   width: 100%;
   height: 50px;

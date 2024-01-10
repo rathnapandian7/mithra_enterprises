@@ -87,9 +87,7 @@ function Nav() {
           <li>
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li>
-            <Link to="/enqiry">Enquiry</Link>
-          </li>
+         
         </ul>
       </div>
     </div>

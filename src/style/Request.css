@@ -1,0 +1,169 @@
+
+  .enq-container {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: whitesmoke;
+  }
+  .enq-div-container {
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+  .requestimg{
+    position:relative ;
+    top: 50px;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+  }
+  .enqury {
+    margin: 10px auto;
+    width: 100%;
+  }
+  .enqury h1 {
+    text-align: right;
+    border-bottom: 3px rgb(203, 197, 236) solid;
+    color: rgb(198, 71, 71);
+    position: relative;
+    font-size: 32px;
+  }
+  .enqury-content {
+    margin: auto;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    display: flex;
+  }
+  .talk-us {
+    width: 70%;
+    background-color: white;
+  }
+  
+  .talk-us h1 {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #273272;
+  }
+  .talk-us h3 {
+    color: white;
+    margin: 10px 85px;
+    font-size: small;
+    color: #565872;
+  }
+  .talk-us1 {
+    width: 30%;
+    background-color: #f2f2f3;
+  }
+  .space {
+    height: 35px;
+  }
+  .footerspace {
+    height: 55px;
+  }
+  .form-row {
+    /* border: 3px rgb(86, 190, 234) solid; */
+    margin: auto;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .form-row .message {
+    width: 801px;
+    margin: auto;
+  }
+  .firstName,
+  .secondName,
+  .email,
+  .phone,
+  .website,
+  .company,
+  .message {
+    width: 50%;
+    height: 50px;
+    margin: 10px;
+  }
+  .firstName input,
+  .secondName input,
+  .email input,
+  .phone input,
+  .website input,
+  .company input {
+    padding: 15px 10px;
+    text-transform: uppercase;
+  }
+  .firstName input:hover,
+  .secondName input:hover,
+  .email input:hover,
+  .phone input:hover,
+  .website input:hover,
+  .company input:hover {
+    background-color: #e8ebef;
+    border: 2px solid rgb(97, 34, 243);
+  }
+  .submit {
+    margin: 20px auto;
+    background-color: #c6d3e3;
+    height: 50px;
+    border-radius: 35px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    text-shadow: #c6d3e3;
+  }
+  .submit button {
+    border: none !important;
+    background: none !important;
+    background-color: blueviolet;
+  }
+  .submit input {
+    margin: 15px 0;
+    border: none !important;
+    background: none !important;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #c6d3e3;
+    letter-spacing: 1px;
+  }
+  .submit:hover,
+  .submit input :hover {
+    background-color: rgb(6, 82, 221, 1);
+    color: white;
+  
+    letter-spacing: 3px;
+  }
+  .submit button {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 15px;
+    border: none !important;
+    background: none !important;
+    background-color: rgb(6, 82, 221, 1);
+    letter-spacing: 3px;
+  }
+  .talk-us1 .cont {
+    position: relative;
+    top: 10%;
+    text-align: left;
+    padding: 0 35px;
+  }
+  .cont h3 {
+    color: #273272;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .cont h5 {
+    color: #565872;
+    line-height: 30px;
+  }
+  

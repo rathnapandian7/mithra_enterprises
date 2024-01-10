@@ -16,13 +16,14 @@ import Thermal from "./component/Thermal";
 import PowerTools from "./component/PowerTools";
 import Refinery from "./component/Refinery";
 import Steels from "./component/Steels";
-
+import Request from "./component/Request";
 import RentSales from "./component/RentSales";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/request" element={<Request />} />
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<Product />} />
         <Route path="/service" element={<Service />} />

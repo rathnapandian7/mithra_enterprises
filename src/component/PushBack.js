@@ -4,10 +4,16 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import Fade from "react-reveal/Fade";
 import "../style/Pushback.css";
+import { useNavigate } from "react-router-dom";
 function PushBack() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
+
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    navigate("/request", {state:{src:e}});
+  };
   return (
     <div>
       <Header />
@@ -70,13 +76,13 @@ function PushBack() {
             <div className="push-header">Types</div>
             <div className="push">
               <div className="push-div">
-                <img src="../pallet/push-shuttle.jpg" alt="" />
+                <img src="../pallet/push-shuttle.jpg" alt="" onClick={() => handleClick("../pallet/push-shuttle.jpg" )}/>
                 <div className="push-div1">
                   <h3>Push-back with shuttles</h3>
                 </div>
               </div>
               <div className="push-div">
-                <img src="../pallet/roller-shuttle.jpg" alt="" />{" "}
+                <img src="../pallet/roller-shuttle.jpg" alt="" onClick={() => handleClick("../pallet/roller-shuttle.jpg")}/>
                 <div className="push-div1">
                   <h3>Push-back with rollers</h3>
                 </div>

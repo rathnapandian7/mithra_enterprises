@@ -1,11 +1,17 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 function Mezzanine() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
+
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    navigate("/request", { state: { src: e } });
+  };
   return (
     <div>
       <Header />
@@ -68,19 +74,31 @@ function Mezzanine() {
           <div className="type-header">Types</div>
           <div className="type">
             <div className="type-div">
-              <img src="../pallet/pushback.jpg" alt="" />
+              <img
+                src="../pallet/pushback.jpg"
+                alt=""
+                onClick={() => handleClick("../pallet/pushback.jpg")}
+              />
               <div className="content-div1">
                 <h3>Rack Mezzanine</h3>
               </div>
             </div>
             <div className="type-div">
-              <img src="../pallet/compact.jpg" alt="" />{" "}
+              <img
+                src="../pallet/compact.jpg"
+                alt=""
+                onClick={() => handleClick("../pallet/compact.jpg")}
+              />
               <div className="content-div1">
                 <h3>Shelving Mezzanine</h3>
               </div>
             </div>
             <div className="type-div">
-              <img src="../pallet/mobile.jpg" alt="" />
+              <img
+                src="../pallet/mobile.jpg"
+                alt=""
+                onClick={() => handleClick("../pallet/mobile.jpg")}
+              />
               <div className="content-div1">
                 <h3>Free Standing Mezzanines</h3>
               </div>

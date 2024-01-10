@@ -5,8 +5,12 @@ import Flip from "react-reveal/Flip";
 import Rotate from "react-reveal/Rotate";
 import Roll from "react-reveal/Roll";
 import Slide from "react-reveal/Slide";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Products_home() {
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    navigate("/request", {state:{src:e}});
+  };
   return (
     <div className="product_home_container">
       <div className="power_tools">
@@ -29,7 +33,11 @@ function Products_home() {
         </Fade>
         <Flip right>
           <div className="power">
-            <img src="/bkg_img/bkg4.png" alt="power tools" />
+            <img
+              src="/bkg_img/bkg4.png"
+              alt="power tools"
+              onClick={() => handleClick("/bkg_img/bkg4.png")}
+            />
           </div>
         </Flip>
       </div>
@@ -38,7 +46,7 @@ function Products_home() {
       <div className="saftey_tools">
         <Rotate top left>
           <div className="saftey_img">
-            <img src="/safety/safety1.png" alt="saftey tools" />
+            <img src="/safety/safety1.png" alt="saftey tools" onClick={() => handleClick("/safety/safety1.png")}/>
           </div>
         </Rotate>
         <Roll right>
@@ -77,14 +85,14 @@ function Products_home() {
         </Slide>
         <Slide left>
           <div className="thermal">
-            <img src="/safety/thermal1.jpg" alt="thermal gas" />
+            <img src="/safety/thermal1.jpg" alt="thermal gas" onClick={() => handleClick("/safety/thermal1.jpg")}/>
           </div>
         </Slide>
       </div>
       <div className="saftey_tools">
         <Rotate top left>
           <div className="saftey_img">
-            <img src="/safety/storage.png" alt="saftey tools" />
+            <img src="/safety/storage.png" alt="saftey tools" onClick={() => handleClick("/safety/storage.png")}/>
           </div>
         </Rotate>
         <Roll right>
@@ -125,14 +133,14 @@ function Products_home() {
         </Slide>
         <Slide left>
           <div className="thermal">
-            <img src="../LT/refinery.jpg" alt="Refinery" />
+            <img src="../LT/refinery.jpg" alt="Refinery" onClick={() => handleClick("../LT/refinery.jpg")}/>
           </div>
         </Slide>
       </div>
       <div className="saftey_tools">
         <Rotate top left>
           <div className="saftey_img">
-            <img src="../LT/steel.avif" alt="Steels" />
+            <img src="../LT/steel.avif" alt="Steels" onClick={() => handleClick("../LT/steel.avif")}/>
           </div>
         </Rotate>
         <Roll right>

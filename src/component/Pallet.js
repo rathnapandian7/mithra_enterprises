@@ -2,13 +2,17 @@ import React, { useEffect } from "react";
 import Header from "./Header";
 import Nav from "./Nav";
 import "../style/Pallet.css";
-
+import { useNavigate ,useLocation} from "react-router-dom";
 import Footer from "./Footer";
 import { Flip } from "react-reveal";
 function Pallet() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    navigate("/request", {state:{src:e}});
+  };
   return (
     <div>
       <Header />
@@ -65,19 +69,19 @@ function Pallet() {
             <div className="type-header">Types</div>
             <div className="type">
               <div className="type-div">
-                <img src="../pallet/pushback.jpg" alt="" />
+                <img src="../pallet/pushback.jpg" alt="" onClick={() => handleClick('../pallet/pushback.jpg')}/>
                 <div className="content-div1">
                   <h3>Push back Pallet</h3>
                 </div>
               </div>
               <div className="type-div">
-                <img src="../pallet/compact.jpg" alt="" />{" "}
+                <img src="../pallet/compact.jpg" alt="" onClick={() => handleClick("../pallet/compact.jpg")}/>
                 <div className="content-div1">
                   <h3>Compact Pallet</h3>
                 </div>
               </div>
               <div className="type-div">
-                <img src="../pallet/mobile.jpg" alt="" />
+                <img src="../pallet/mobile.jpg" alt="" onClick={() => handleClick("../pallet/mobile.jpg")}/>
                 <div className="content-div1">
                   <h3>Mobile racking pallet</h3>
                 </div>
