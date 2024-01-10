@@ -6,6 +6,7 @@
 }
 
 .lt-contianer {
+  z-index: -1;
   background-image: url(../../public/LT1/bkg2.jpg);
   /* background-position: bottom; */
   background-repeat: no-repeat;

@@ -1,13 +1,44 @@
-ul {
+.head-cont {
+  background-color: goldenrod;
+  position: fixed;
+  color: black;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  text-align: right;
+  z-index: 99;
+}
+.inner-head {
+  width: 100%;
+  display: flex;
+}
+.phone-div {
+  text-align: right;
+  margin: right;
+  width: 40%;
+  margin-right: 3px;
+  font: bold;
+  padding: 2px;
+  gap: 2px;
+}
+.phone-div i {
+  margin: 0 15px;
+}
+
+.mail-div {
+  width: 60%;
+}
+
+/* ul {
   list-style: none;
 }
 
 header {
   padding: 0.5rem 0 0;
-}
+} */
 /* Comapany name stylee */
 
-.companyName {
+/* .companyName {
   color: white(18, 15, 15);
   font-size: 26px;
   margin: 10px;
@@ -58,7 +89,7 @@ header {
 
 .headermenu i:hover {
   background-color: #e61313;
-}
+} */
 
 @media screen and (width<= 720px) {
   #Headernav {
@@ -98,6 +129,39 @@ header {
     width: 560px;
   }
   .headermenu li {
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    text-align: right;
+    position: relative;
+  }
+}
+
+@media screen and (width<= 426px) {
+  #Headernav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+  }
+  .headermenu {
+    position: relative;
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+  }
+  .headermenu li {
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    text-align: right;
+    position: relative;
+  }
+  .headermenu li i {
+    border: 2px solid white;
     justify-content: space-evenly;
     text-align: center;
     margin: auto;

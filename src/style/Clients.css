@@ -1,126 +1,4 @@
-/* .clients-container {
-  width: 80%;
-  min-height: 250px;
-  border: 2px solid red;
-  margin: auto;
-}
-.client-header {
-  width: 100%;
-  min-height: 50px;
-  border: 2px solid red;
-  margin: auto;
-  text-align: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
 
-.client-content {
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
-
-.clients-col {
-  position: relative;
-  flex: 33.33%;
-  padding: 5px;
-} */
-/* 
-.clients-col img {
-  width: 100%;
-} */
-/* 
-.slider {
-  height: 250px;
-  margin: auto;
-  position: relative;
-  width: 60%;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-.clients {
-  width: 60%;
-  align-items: center;
-  text-align: left;
-}
-.clients p {
-  border-bottom: rgb(9, 9, 8);
-  font-size: 24px;
-  color: rgb(117, 100, 100);
-}
-.slider-track {
-  width: 80%;
-  display: flex;
-  animation: scroll 40s linear infinite;
-}
-.slider-track :hover {
-  animation-play-state: paused;
-}
-.slide p {
-  border-bottom: 2px solid red;
-}
-.slide {
-  border: 2px solid red;
-  height: 200px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  background-size: cover;
-}
-.slide img {
-  margin: auto;
-  text-align: center;
-  width: 300px;
-  height: 150px;
-  background-size: cover;
-}
-img {
-  object-fit: cover;
-  width: 100%;
-  transition: transform 1s;
-}
-img:hover {
-  transform: translateZ(20px);
-}
-
-.slider::before,
-.slider::after {
-  background: linear-gradient(
-    to right,
-    rgb(255, 255, 255, 1) 0%,
-    rgba(43, 23, 23, 0) 100%
-  );
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: 15%;
-  z-index: 2;
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateY(180deg);
-}
-.slider,
-.slide :hover {
-  animation-play-state: paused;
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 6));
-  }
-} */
 
 .client-container {
   width: 80%;
@@ -145,12 +23,14 @@ img:hover {
 .client-submenu {
   animation: scroll 40s linear infinite;
   transition: all ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
   position: relative;
-  border: 2px solid rgb(29, 174, 241);
+  /* border: 2px solid rgb(29, 174, 241); */
   width: 25%;
   text-align: center;
   object-fit: cover;
-  margin: 3px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .client-submenu img {

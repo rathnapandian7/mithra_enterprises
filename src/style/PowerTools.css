@@ -1,4 +1,5 @@
 .powercontent {
+  z-index: -1;
   border-top: 2px solid rgb(50, 28, 246);
   width: 100%;
   height: 50px;
@@ -15,14 +16,17 @@
   display: flex;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
   width: 100%;
+  z-index: -1;
 }
 .sub-menu {
   width: 30%;
 }
 .sub-menu1 {
+  z-index: -1;
   width: 70%;
 }
 .powertools_nav {
+  z-index: -1;
   min-height: 200px;
   display: flex;
   flex-direction: column;

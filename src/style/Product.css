@@ -4,10 +4,10 @@
   width: 80%;
   margin: auto;
   z-index: -1;
+  top: 25px;
 }
 .product-inner-left,
 .product-inner-right {
-
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -47,9 +47,7 @@
   animation-duration: 1s;
   opacity: 1;
 }
-/* .animate ::before {
-  opacity: 0;
-} */
+
 @keyframes right {
   0% {
     left: -100%;

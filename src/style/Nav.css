@@ -1,15 +1,15 @@
 .navmenu {
-  /* position: re; */
+  position: relative;
   width: 100%;
-  /* top: 0; */
   z-index: 1;
   align-items: center;
   display: flex;
+  background-color: rgb(6, 82, 221, 1);
+  top: 28px;
 }
 .logo-cont {
-  /* border: 2px solid rgb(28, 2, 2); */
   align-items: center;
-  width: 40%;
+  width: 35%;
   height: 110px;
   text-align: center;
   justify-content: center;
@@ -22,7 +22,7 @@
   border-bottom: 2px 2px rgb(224, 219, 219);
   border: 2px solid;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
-  border-radius: 50px;
+  border-radius: 25px;
   margin: 5px 0 0 60px;
   align-items: center;
   width: 90px;
@@ -31,35 +31,41 @@
   position: relative;
   top: 4px;
 }
+.menu ul{
+  list-style-type: none;
+}
 .menu li {
   text-transform: uppercase;
 }
 .companyName {
   display: flex;
-  text-shadow: 2px 2px rgb(213, 204, 204);
+  /* text-shadow: 2px 2px rgb(213, 204, 204); */
   width: 100%;
-  color: rgba(27, 20, 100, 1);
+  color: white(27, 20, 100, 1);
   flex-direction: column;
   margin: 10px;
+ 
 }
 .companyName .div1 {
-  text-shadow: 2px 2px rgb(213, 204, 204);
   text-transform: uppercase;
   font-family: Georgia, "Times New Roman", Times, serif;
   position: relative;
   top: -25px;
+  left: 20px;
   font-weight: 900;
   text-align: left;
   font-size: 70px;
+  color: white;
 }
 .companyName .div2 {
-  text-shadow: 2px 2px rgb(213, 204, 204);
+  left: 22px;
+  color: white;
   position: relative;
   top: -50px;
   font-weight: 500;
   text-align: left;
-  font-size: 18px;
-  letter-spacing: 3px;
+  font-size: 15px;
+  letter-spacing: 4px;
 }
 
 .companyName .span1 {
@@ -70,13 +76,15 @@
 }
 
 .menu-container {
+  display: flex;
   width: 60%;
+  /* margin: auto; */
 }
 .menu {
   margin: auto;
   width: 100%;
   background-color: white(72, 52, 212, 1);
-  text-align: center;
+  text-align: right;
   align-items: center;
   display: block;
 }
@@ -87,9 +95,8 @@
   transition: background-color 0.22s ease, color 0.22s ease;
 }
 .menu a {
-  text-decoration: none;
   font-size: 16px;
-  color: rgba(27, 20, 100, 1);
+  color: white(27, 20, 100, 1);
   display: block;
   margin: 16px 0;
   padding: 10px 1.5rem;
@@ -98,9 +105,10 @@
 }
 
 .menu a:hover {
-  background-color: rgb(255, 238, 0);
+  background-color: goldenrod;
 }
 .menu li {
+  text-decoration: none;
   position: relative;
 }
 
@@ -116,14 +124,15 @@
 }
 
 .submenu1 {
+  z-index: 99;
   position: absolute;
-  background-color: white;
   display: block;
   top: -5px;
   left: 100%;
   display: none;
   animation: slideleft 0.3s ease;
   text-align: left;
+  text-decoration: none;
 }
 .submenu2 {
   position: absolute;
@@ -133,18 +142,26 @@
   display: none;
   animation: slideleft 0.3s ease;
   text-align: left;
+  z-index: 99;
 }
+
+
 .menu li:hover > .submenu {
+  text-decoration: none;
+  background-color: rgb(6, 82, 221, 1);
   font-size: 14px;
   display: block;
-  /* border: 2px solid red; */
 }
 
 .submenu li:hover .submenu1 {
+  text-decoration: none;
+  background-color: rgb(6, 82, 221, 1);
   display: block;
+  z-index: 99;
 }
 .submenu li:hover .submenu2 {
   display: block;
+  z-index: 99;
 }
 .submenu li a {
   text-transform: capitalize;
@@ -175,7 +192,7 @@
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width= 720px) {
   .navmenu {
     position: relative;
     top: 0;
@@ -228,6 +245,7 @@
     height: 70px;
   }
   .companyName .div1 {
+    color: white;
     text-transform: uppercase;
     font-family: Georgia, "Times New Roman", Times, serif;
     width: 100%;
@@ -276,6 +294,132 @@
     font-weight: 800;
   }
 
+  .submenu {
+    position: absolute;
+    background-color: white;
+    top: 20px;
+    display: none;
+    animation: slideleft 0.3s ease;
+    text-align: left;
+  }
+
+  .menu li:hover > .submenu {
+    font-size: 8px;
+    display: block;
+  }
+  .submenu li a {
+    text-transform: capitalize;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+/* ----media 426px */
+
+@media screen and (width<= 426px) {
+  .navmenu {
+    position: relative;
+    top: 20px;
+    z-index: 1;
+  }
+  .menu-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .logo-cont {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    top: 15px;
+    left: 30px;
+    text-align: center;
+    justify-content: center;
+    line-height: 10px;
+  }
+
+  .logo {
+    display: flex;
+    width: 100%;
+  }
+  .logo img {
+    border-bottom: 2px 2px rgb(224, 219, 219);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
+    border-radius: 50%;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: -60px;
+    top: -10px;
+  }
+
+  .companyName {
+    display: flex;
+    text-shadow: 2px 2px rgb(213, 204, 204);
+    width: 100%;
+    flex-direction: column;
+    margin: 10px;
+    height: 30px;
+  }
+  .companyName .div1 {
+    text-transform: uppercase;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    width: 100%;
+    position: relative;
+    top: 12px;
+    right: 66px;
+    font-weight: 800;
+    text-align: left;
+    letter-spacing: 10px;
+    font-size: 40px;
+  }
+  .companyName .div2 {
+    display: flex;
+    position: relative;
+    line-height: 8px;
+    width: 100%;
+    top: 25px;
+    left: -63px;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .menu {
+    border-top: 2px solid rgb(15, 15, 139);
+    border-bottom: 2px solid rgb(15, 15, 139);
+    margin: 10px auto;
+    width: 100%;
+    background-color: white(72, 52, 212, 1);
+    text-align: center;
+    align-items: center;
+    display: block;
+    position: relative;
+    /* right: 52px; */
+    top: 69px;
+  }
+  .menu > li,
+  .menu > a {
+    display: inline-block;
+    transition: background-color 0.22s ease, color 0.22s ease;
+  }
+  .menu a {
+    text-align: left;
+    text-decoration: none;
+    font-size: 8px;
+    top: 30px;
+    display: block;
+    margin: 5px 0;
+    line-height: 10px;
+    padding: 1px 0.8rem;
+    transition: background-color 0.22s ease, color 0.22s ease;
+  }
+  .about {
+    display: none;
+  }
   .submenu {
     position: absolute;
     background-color: white;

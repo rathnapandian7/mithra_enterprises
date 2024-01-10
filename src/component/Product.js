@@ -3,7 +3,6 @@ import Header from "./Header";
 import Nav from "./Nav";
 import "../style/Product.css";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
 function Product() {
   const Images = [
     {
@@ -40,25 +39,19 @@ function Product() {
           <div className="div-outer ">
             <img src="../Longspan/longspan1.jpg" alt="{img.alt}" />
             <div className="div-text">
-              <h3>
-                <Link to="/pallet">Long Span Racking</Link>
-              </h3>
+              <h3>Long Span Racking</h3>
             </div>
           </div>
           <div className="div-outer ">
             <img src="../Pallet_racking/pallet1.jpg" alt="{img.alt}" />
             <div className="div-text">
-              <h3>
-                <Link to="/pallet">Pallet Racking</Link>
-              </h3>
+              <h3>Pallet Racking</h3>
             </div>
           </div>
           <div className="div-outer ">
             <img src="../Mezzanine/mezz2.webp" alt="{img.alt}" />
             <div className="div-text">
-              <h3>
-                <Link to="/mezzanine">Mezzanine Racking</Link>
-              </h3>
+              <h3>Mezzanine Racking</h3>
             </div>
           </div>
         </div>
@@ -66,25 +59,19 @@ function Product() {
           <div className="div-outer">
             <img src="../Pushback/pushback1.jpg" alt="{img.alt}" />
             <div className="div-text">
-              <h3>
-                <Link to=".pushback">Push Back Racking</Link>
-              </h3>
+              <h3>Push Back Racking</h3>
             </div>
           </div>
           <div className="div-outer">
             <img src="../Pallet_racking/pallet2.jpg" alt="{img.alt}" />
             <div className="div-text">
-              <h3>
-                <Link to="/pallet">Long Span Racking</Link>
-              </h3>
+              <h3>Long Span Racking</h3>
             </div>
           </div>
           <div className="div-outer">
             <img src="../Mezzanine/mezz2.webp" alt="{img.alt}" />
             <div className="div-text">
-              <h3>
-                <Link to="/pallet">Long Span Racking</Link>
-              </h3>
+              <h3>Long Span Racking</h3>
             </div>
           </div>
         </div>

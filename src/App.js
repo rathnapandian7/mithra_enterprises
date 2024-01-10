@@ -16,7 +16,6 @@ import Thermal from "./component/Thermal";
 import PowerTools from "./component/PowerTools";
 import Refinery from "./component/Refinery";
 import Steels from "./component/Steels";
-import Attendance from "./component/Attendance";
 
 import RentSales from "./component/RentSales";
 function App() {

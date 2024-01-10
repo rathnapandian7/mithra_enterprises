@@ -1,7 +1,6 @@
 .ref-container {
-  
-  border: 2px solid white;
   position: relative;
+  top:28px;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -9,7 +8,7 @@
 }
 
 .ref-main {
-  width:100%;
+  width: 100%;
   height: 600px;
   animation: change 20s linear infinite;
   animation-iteration-count: infinite;
@@ -180,4 +179,40 @@
     text-align: center;
     font-size: 8px;
   }
+}
+
+@media screen and (max-width: 426px) {
+  .ref-container {
+    top: 47px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .ref-main {
+    width: 720px;
+    height: 350px;
+    animation: change 20s linear infinite;
+    animation-iteration-count: infinite;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+  .text-main1 span {
+    position: absolute;
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    top: 55px;
+    color: greenyellow;
+    left: 45px;
+    justify-content: center;
+    word-break: normal;
+    transition-delay: 250ms;
+    animation: scale 20s infinite linear;
+  }
+
+ 
 }

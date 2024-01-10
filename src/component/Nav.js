@@ -19,7 +19,9 @@ function Nav() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/about" className="about">
+              About Us
+            </Link>
           </li>
           <li>
             <Link to="/service">Service</Link>
@@ -49,7 +51,6 @@ function Nav() {
                   <li>
                     <Link to="/rent">Rental&Sales</Link>
                   </li>
-                  
                 </ul>
               </li>
               {/* <li>
@@ -86,12 +87,9 @@ function Nav() {
           <li>
             <Link to="/contact">Contact Us</Link>
           </li>
-          {/* <li>
-            <Link to="/contact">Engineering</Link>
-          </li>
           <li>
-            <Link to="/contact">Enterprises</Link>
-          </li> */}
+            <Link to="/enqiry">Enquiry</Link>
+          </li>
         </ul>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Header from "./Header";
 import Nav from "./Nav";
 import "../style/Refinery.css";
+import Footer from "./Footer";
 function Refinery() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,6 +48,7 @@ function Refinery() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
