@@ -17,7 +17,7 @@ function Refinery() {
     <div>
       <Header />
       <Nav />
-      <div className="powercontent">Refinery</div>
+      <div className="powercontent" onClick={() => handleClick("../Refi/1.webp")}>Refinery</div>
       <div className="product-container">
         <div></div>
         <div className="product-inner-left animate-left">

@@ -10,14 +10,11 @@ function PowerTools() {
   }, []);
 
   const navigate = useNavigate();
-  const handleClick1 = () => {
-    console("check");
-    navigate("/request");
+
+  const handleClick = (e) => {
+    navigate("/request", { state: { src: e } });
   };
-  const handleClick = () => {
-    console("check");
-    navigate("/request");
-  };
+
   return (
     <section>
       <Header />
@@ -27,49 +24,50 @@ function PowerTools() {
         <div className="sub-menu">
           <div className="powertools_nav">
             <div className="nav-content nav-menu">Power Tools</div>
-            <div className="nav-content">
-              Drills <i class="far fa-arrow-alt-circle-right"></i>
+            <div className="nav-content"  onClick={() => handleClick("/power-tools/1.jpg")}>
+             Link Drills<i class="far fa-arrow-alt-circle-right"></i>
             </div>
-            <div className="nav-content">
+            <div className="nav-content" onClick={() => handleClick("/power-tools/2.jpg")}>
               Impact Wrench <i class="far fa-arrow-alt-circle-right"></i>
             </div>
-            <div className="nav-content">
+            <div className="nav-content"  onClick={() => handleClick("/power-tools/5.jpg")}>
               Grinders <i class="far fa-arrow-alt-circle-right"></i>
             </div>
-            <div className="nav-content">
+            <div className="nav-content"  onClick={() => handleClick("/power-tools/11.jpg")}>
               Planners <i class="far fa-arrow-alt-circle-right"></i>
             </div>
-            <div className="nav-content">
+            <div className="nav-content" onClick={() => handleClick("/power-tools/4.jpg")}>
               Saws <i class="far fa-arrow-alt-circle-right"></i>
             </div>
-            <div className="nav-content">
+            <div className="nav-content" onClick={() => handleClick("/power-tools/6.jpg")}>
               Impact Wrench <i class="far fa-arrow-alt-circle-right"></i>
             </div>
-            <div className="nav-content">
+            <div className="nav-content" onClick={() => handleClick("/power-tools/7.jpg")}>
               Sanders <i class="far fa-arrow-alt-circle-right"></i>
             </div>
-            <div className="nav-content">
+            <div className="nav-content" onClick={() => handleClick("/power-tools/9.jpg")}>
               Polishers <i class="far fa-arrow-alt-circle-right"></i>
             </div>
-            <div className="nav-content">
+            <div className="nav-content"  onClick={() => handleClick("/power-tools/12.jpg")}>
               Routers <i class="far fa-arrow-alt-circle-right"></i>
             </div>
-            <div className="nav-content">
+            <div className="nav-content" onClick={() => handleClick("/power-tools/combo2.webp")}>
               Combo Kit <i class="far fa-arrow-alt-circle-right"></i>
             </div>
-            <div className="nav-content">
+            <div className="nav-content"  onClick={() => handleClick("/power-tools/chargers.jpg")}>
               Power Tools & Chargers
               <i class="far fa-arrow-alt-circle-right"></i>
             </div>
           </div>
         </div>
+
         <div className="sub-menu1">
           <div className="powertools_main">
             <div className="power-img lt-animate-left">
               <img
                 src="/power-tools/1.jpg"
                 alt="powrtools"
-                onClick={() => handleClick1()}
+                onClick={() => handleClick("/power-tools/1.jpg")}
               />
               <div className="drills-div">Drills</div>
             </div>
@@ -77,7 +75,7 @@ function PowerTools() {
               <img
                 src="/power-tools/2.jpg"
                 alt="powrtools"
-                onClick={() => handleClick()}
+                onClick={() => handleClick("/power-tools/2.jpg")}
               />
               <div className="drills-div">Impact Wrench</div>
             </div>
@@ -85,7 +83,7 @@ function PowerTools() {
               <img
                 src="/power-tools/5.jpg"
                 alt="powrtools"
-                onClick={() => handleClick()}
+                onClick={() => handleClick("/power-tools/5.jpg")}
               />
               <div className="drills-div">Grinders</div>
             </div>
@@ -93,7 +91,7 @@ function PowerTools() {
               <img
                 src="/power-tools/11.jpg"
                 alt="powrtools"
-                onClick={() => handleClick()}
+                onClick={() => handleClick("/power-tools/11.jpg")}
               />
               <div className="drills-div">Planners</div>
             </div>
@@ -101,7 +99,7 @@ function PowerTools() {
               <img
                 src="/power-tools/4.jpg"
                 alt="powrtools"
-                onClick={() => handleClick()}
+                onClick={() => handleClick("/power-tools/4.jpg")}
               />
               <div className="drills-div">Saws</div>
             </div>
@@ -110,7 +108,7 @@ function PowerTools() {
               <img
                 src="/power-tools/6.jpg"
                 alt="powrtools"
-                onClick={() => handleClick()}
+                onClick={() => handleClick("/power-tools/6.jpg")}
               />
               <div className="drills-div">Impact Wrench</div>
             </div>
@@ -118,7 +116,7 @@ function PowerTools() {
               <img
                 src="/power-tools/7.jpg"
                 alt="powrtools"
-                onClick={() => handleClick()}
+                onClick={() => handleClick("/power-tools/7.jpg")}
               />
               <div className="drills-div">Sanders</div>
             </div>
@@ -127,7 +125,7 @@ function PowerTools() {
               <img
                 src="/power-tools/9.jpg"
                 alt="powrtools"
-                onClick={() => handleClick()}
+                onClick={() => handleClick("/power-tools/9.jpg")}
               />
               <div className="drills-div">Polishers</div>
             </div>
@@ -135,7 +133,7 @@ function PowerTools() {
               <img
                 src="/power-tools/12.jpg"
                 alt="powrtools"
-                onClick={() => handleClick()}
+                onClick={() => handleClick("/power-tools/12.jpg")}
               />
               <div className="drills-div">Routers</div>
             </div>
@@ -143,7 +141,7 @@ function PowerTools() {
               <img
                 src="/power-tools/10.jpg"
                 alt="powrtools"
-                onClick={() => handleClick()}
+                onClick={() => handleClick("/power-tools/10.jpg")}
               />
               <div className="drills-div">Grinders</div>
             </div>
@@ -152,7 +150,7 @@ function PowerTools() {
               <img
                 src="/power-tools/combo2.webp"
                 alt="powrtools"
-                onClick={() => handleClick()}
+                onClick={() => handleClick("/power-tools/combo2.webp")}
               />
               <div className="drills-div"> Combo Kit</div>
             </div>
@@ -160,7 +158,7 @@ function PowerTools() {
               <img
                 src="/power-tools/chargers.jpg"
                 alt="powrtools"
-                onClick={() => handleClick()}
+                onClick={() => handleClick("/power-tools/chargers.jpg")}
               />
               <div className="drills-div">Power Tools & Chargers</div>
             </div>

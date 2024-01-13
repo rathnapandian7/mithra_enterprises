@@ -78,7 +78,7 @@ function Products_home() {
             </p>
             <div className="button-container">
               <div className="Power-btn animate-power">
-                <Link to="/thermal">Read More</Link>
+                <Link to="/lt">Read More</Link>
               </div>
             </div>
           </div>

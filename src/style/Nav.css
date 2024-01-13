@@ -44,9 +44,11 @@
   color: white(27, 20, 100, 1);
   flex-direction: column;
   margin: 10px;
+
  
 }
 .companyName .div1 {
+  
   text-transform: uppercase;
   font-family: Georgia, "Times New Roman", Times, serif;
   position: relative;
@@ -61,11 +63,11 @@
   left: 22px;
   color: white;
   position: relative;
-  top: -50px;
+  top: -47px;
   font-weight: 500;
   text-align: left;
-  font-size: 15px;
-  letter-spacing: 4px;
+  font-size: 14px;
+  letter-spacing: 4.5px;
 }
 
 .companyName .span1 {

@@ -11,7 +11,6 @@ function RentSales() {
 
   const navigate = useNavigate();
   const handleClick = () => {
-    alert("check");
     navigate("/request");
   };
   return (

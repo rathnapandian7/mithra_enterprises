@@ -1,8 +1,10 @@
-
+.indcontent{
+  width: 30%;
+}
 
 .powercontent {
     border-top: 2px solid rgb(50, 28, 246);
-    width: 100%;
+    width: 70%;
     height: 50px;
     margin: 10px auto;
     text-align: center;
@@ -67,17 +69,15 @@
   .power-img img {
     /* position: relative; */
     text-align: center;
+    border-radius: 10px;
     margin: 10px auto;
     background-size: cover;
-    border: rgb(223, 220, 242) double 2px;
     width: 300px;
     height: 200px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
   }
   
-  .power-img img:hover {
-    /* transform: scale(1.1); */
-  }
+
   .drills-div {
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 5); */
     font-size: 20px;

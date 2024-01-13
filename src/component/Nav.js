@@ -31,7 +31,7 @@ function Nav() {
                 <Link to="/powertools">power Tools</Link>
               </li>
               <li>
-                <Link to="/thermal">Thermal gas & Power turbin</Link>
+                <Link to="/lt">Thermal gas & Power turbin</Link>
               </li>
               <li>
                 <Link to="/safetytools">Industrial Safety Equipments</Link>
@@ -53,32 +53,7 @@ function Nav() {
                   </li>
                 </ul>
               </li>
-              {/* <li>
-                  <Link to="/refinery">Sales</Link>
-                </li>
-                <li>
-                  <Link to="/refinery">Rental</Link>
-                </li> */}
-              {/* <ul className="submenu1">
-                  <li>
-                    <Link to="/lt">L&T</Link>
-                  </li>
-                  <li>
-                    <Link to="/storage">Storage Solutions</Link>
-                  </li>
-                </ul> */}
-              {/* </li> */}
-              {/* <li>
-                <Link>Enterprises</Link>
-                <ul className="submenu2">
-                  <li>
-                    <Link>Power Tools</Link>
-                  </li>
-                  <li>
-                    <Link>Industrial Safety Equipment</Link>
-                  </li>
-                </ul>
-              </li> */}
+              
             </ul>
           </li>
           <li>

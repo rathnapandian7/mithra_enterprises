@@ -1,20 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "./Header";
 import Nav from "./Nav";
 import "../style/Request.css";
-import FlashMessages from "./FlashMessages";
-import {
-  Link,
-  Routes,
-  Route,
-  useNavigate,
-  useLocation,
-} from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import Footer from "./Footer";
 
-function Request(prop) {
+function Request() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   const location = useLocation();
+ 
+
   const navigate = useNavigate();
   const [data, setdata] = useState([
     {
@@ -185,7 +183,7 @@ function Request(prop) {
                 <img
                   className="requestimg"
                   src={
-                    location.state.src != null
+                    location.state != null
                       ? location.state.src
                       : "../Pallet_racking/pallet1.jpg"
                   }

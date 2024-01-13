@@ -1,14 +1,13 @@
-.lt {
+.lt1 {
   text-align: center;
   font-size: 24px;
-  /* border-bottom: 2px solid gold;
-  background-color: gray; */
 }
 
-.lt-contianer {
-  z-index: -1;
+.lt-contianer1 {
+  cursor: pointer;
+  position: relative;
+  top: 30px;
   background-image: url(../../public/LT1/bkg2.jpg);
-  /* background-position: bottom; */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -16,27 +15,25 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  /* margin: 10px auto; */
 }
 
-.lt-contianer::before {
+.lt-contianer1::before {
   content: "";
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(209, 229, 246, 0.288)
+  background-color: rgba(209, 229, 246, 0.288);
   /* background-color: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://i.imgur.com/xnh5x47.jpg"); */
-
 }
-.lt-inner {
+.lt-inner1 {
   width: 70%;
   display: flex;
   margin: auto;
   padding-top: 25px;
 }
-.lt-inner div {
+.lt-inner1 div {
   position: relative;
   display: inline-block;
   text-align: center;
@@ -44,19 +41,20 @@
   width: 32%;
   height: 400px;
 }
-.lt-inner div img :hover {
+.lt-inner1 div img :hover {
   cursor: pointer;
 }
-.lt-inner div img {
+.lt-inner1 div img {
+  border-radius: 20px;
   /* display: block; */
   width: 340px;
   height: 340px;
   object-fit: cover;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
 }
-.thermal div,
-.refinery div,
-.steel div {
+.thermal1 div,
+.refinery1 div,
+.steel1 div {
   width: 90%;
   position: absolute;
   top: 20px;
@@ -67,6 +65,4 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.lt-inner div img:hover {
-  transform: scale(1.05);
-}
+

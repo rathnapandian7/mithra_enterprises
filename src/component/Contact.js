@@ -33,7 +33,6 @@ function Contact() {
       website: data.website,
       message: data.message,
     };
-    alert(jsonData);
     axios("http://localhost:8080/enquiryNow/", {
       method: "POST",
       data: JSON.stringify(jsonData),

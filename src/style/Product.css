@@ -1,10 +1,9 @@
 .product-container {
   min-height: 500px;
   position: relative;
+  top: 20px;
   width: 80%;
   margin: auto;
-  z-index: -1;
-  top: 25px;
 }
 .product-inner-left,
 .product-inner-right {
@@ -21,7 +20,6 @@
 }
 
 .div-outer {
- 
   align-items: center;
   margin: 30px 3px 30px;
   width: 30%;
@@ -36,7 +34,10 @@
   animation-duration: 1s;
   opacity: 1;
 }
-
+/* .animate-right:hover,
+.animate-left:hover {
+  animation-play-state: paused;
+} */
 .animate-left {
   bottom: 15%;
   position: relative;
@@ -47,7 +48,9 @@
   animation-duration: 1s;
   opacity: 1;
 }
-
+/* .animate ::before {
+  opacity: 0;
+} */
 @keyframes right {
   0% {
     left: -100%;
@@ -77,6 +80,7 @@
   object-fit: cover;
 }
 .div-text {
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   text-align: center;
