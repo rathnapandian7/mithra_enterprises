@@ -10,7 +10,6 @@ function PowerTools() {
   }, []);
 
   const navigate = useNavigate();
-
   const handleClick = (e) => {
     navigate("/request", { state: { src: e } });
   };

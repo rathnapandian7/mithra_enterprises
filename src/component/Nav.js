@@ -49,7 +49,7 @@ function Nav() {
                 <Link to="/refinery">Scaffolding</Link>
                 <ul className="submenu1">
                   <li>
-                    <Link to="/rent">Rental&Sales</Link>
+                    <Link to="/scafolding">Rental&Sales</Link>
                   </li>
                 </ul>
               </li>

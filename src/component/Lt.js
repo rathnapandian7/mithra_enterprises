@@ -21,18 +21,19 @@ function Lt() {
         <div className="lt1">Thermal Gas & Turbin</div>
         <div className="lt-inner1 ">
           <div className="thermal1 lt-animate-left opacs">
-            <img
-              src="../LT/thermal.avif"
-              alt="termal"
-              onClick={() => handleClick("../LT/thermal.avif")}
-            />
+            <Link to="/thermal">
+              <img
+                src="../LT/thermal.avif"
+                alt="termal"
+              />
+            </Link>
             <div className="lt-animate-right">
               <Fade left> Thermal gas & Power Turbin</Fade>
             </div>
           </div>
           <div className="refinery1 lt-animate-top">
             <Link to="/refinery">
-              <img src="../LT/refinery.jpg" alt=""  onClick={() => handleClick("/refinery")}/>
+              <img src="../LT/refinery.jpg" alt="" />
             </Link>
             <div className="">
               <Flip right>Refinery</Flip>
@@ -40,7 +41,7 @@ function Lt() {
           </div>
           <div className="steel1 lt-animate-right">
             <Link to="/steels">
-              <img src="../LT/steel.avif" alt="" onClick={() => handleClick("/steels")} />
+              <img src="../LT/steel.avif" alt="" />
             </Link>
             <div className="lt-animate-left">
               <Fade right>Steel Plant</Fade>

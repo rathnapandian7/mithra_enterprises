@@ -55,6 +55,7 @@
 .thermal1 div,
 .refinery1 div,
 .steel1 div {
+  height: 50px;
   width: 90%;
   position: absolute;
   top: 20px;

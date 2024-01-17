@@ -17,7 +17,7 @@ import PowerTools from "./component/PowerTools";
 import Refinery from "./component/Refinery";
 import Steels from "./component/Steels";
 import Request from "./component/Request";
-import RentSales from "./component/RentSales";
+import Scafolding from "./component/Scafolding";
 function App() {
   return (
     <BrowserRouter>
@@ -39,7 +39,7 @@ function App() {
         <Route path="/refinery" element={<Refinery />} />
         <Route path="/thermal" element={<Thermal />} />
         <Route path="/steels" element={<Steels />} />
-        <Route path="/rent" element={<RentSales />} />
+        <Route path="/scafolding" element={<Scafolding />} />
       </Routes>
     </BrowserRouter>
   );

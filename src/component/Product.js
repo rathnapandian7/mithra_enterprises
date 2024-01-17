@@ -9,32 +9,7 @@ function Product() {
   const handleClick = (e) => {
     navigate("/request", { state: { src: e } });
   };
-  const Images = [
-    {
-      src: "/Longspan/longspan1.jpg",
-      alt: "longspanlogo",
-    },
-    {
-      src: "/Mezzanine/mezz1.webp",
-      alt: "Mezzaninelogo",
-    },
-    {
-      src: "/Pallet_racking/pallet1.jpg",
-      alt: "palletlogo",
-    },
-    {
-      src: "/Pushback/pushback1.jpg",
-      alt: "longspanlogo",
-    },
-    {
-      src: "/Mezzanine/mezz2.webp",
-      alt: "Mezzaninelogo",
-    },
-    {
-      src: "/Pallet_racking/pallet2.jpg",
-      alt: "palletlogo",
-    },
-  ];
+ 
   return (
     <div>
       <Header />
@@ -48,9 +23,9 @@ function Product() {
             </div>
           </div>
           <div className="div-outer ">
-            <img src="../Pallet_racking/pallet1.jpg" alt="{img.alt}" c />
+            <img src="../Pallet_racking/pallet1.jpg" alt="{img.alt}" onClick={() => handleClick("../Pallet_racking/pallet1.jpg")}/>
             <div className="div-text">
-              <h3 onClick={() => handleClick("../Longspan/longspan1.jpg")} >Pallet Racking</h3>
+              <h3 onClick={() => handleClick("../Pallet_racking/pallet1.jpg")} >Pallet Racking</h3>
             </div>
           </div>
           <div className="div-outer ">

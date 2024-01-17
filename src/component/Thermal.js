@@ -1,67 +1,83 @@
-// import React, { useEffect } from "react";
-// import { Link, useNavigate } from "react-router-dom";
-// import Header from "./Header";
-// import Nav from "./Nav";
-// import "../style/Lt.css";
-// import "../style/Animate.css";
-// import Fade from "react-reveal/Fade";
-// import Flip from "react-reveal/Flip";
-// import Footer from "./Footer";
-// function Thermal() {
-//   useEffect(() => {
-//     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-//   }, []);
-//   const navigate = useNavigate();
+import React, { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import Header from "./Header";
+import Nav from "./Nav";
+import "../style/Thermal.css";
+import "../style/Animate.css";
+import Fade from "react-reveal/Fade";
+import Flip from "react-reveal/Flip";
+import Footer from "./Footer";
+function Thermal() {
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    navigate("/request", { state: { src: e } });
+  };
+  return (
+    <section>
+      <Header />
+      <Nav />
+      <div className="powercontent">Thermal Gas Turbin</div>
+      <div className="powertools_cnt">
+        <div className="sub-menu">
+          <div className="powertools_nav">
+            <div className="nav-content nav-menu">Thermal Gas Turbin</div>
 
-//   const handleClick = (e) => {
-//     navigate("/request", { state: { src: e } });
-//   };
-//   return (
-//     <div>
-//       <Header />
-//       <Nav />
-//       <div className="lt-contianer1">
-//         <div className="lt1">Thermal Gas & Turbin</div>
-//         <div className="lt-inner1 ">
-//           <div className="thermal1 lt-animate-left opacs">
-//               <img
-//                 src="../LT/thermal.avif"
-//                 alt="termal"
-//                 onClick={() => handleClick("../LT/thermal.avif")}
-//               />
-//             <div className="lt-animate-right">
-//               <Fade left> Thermal gas & Power Turbin</Fade>
-//             </div>
-//           </div>
-//           <div className="refinery1 lt-animate-top">
-//             <Link to="/ltContent">
-//               <img
-//                 src="../LT/refinery.jpg"
-//                 alt=""
-//                 onClick={() => handleClick("../LT/refinery.jpg")}
-//               />
-//             </Link>
-//             <div className="">
-//               <Flip right>Refinery</Flip>
-//             </div>
-//           </div>
-//           <div className="steel1 lt-animate-right">
-//             <Link to="/ltContent">
-//               <img
-//                 src="../LT/steel.avif"
-//                 alt=""
-//                 onClick={() => handleClick("../LT/steel.avif")}
-//               />
-//             </Link>
-//             <div className="lt-animate-left">
-//               <Fade right>Steel Plant</Fade>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//       <Footer />
-//     </div>
-//   );
-// }
+            <div
+              className="nav-content"
+              onClick={() => handleClick("/thermal/1.png")}
+            >
+              Combustion Chamber <i class="far fa-arrow-alt-circle-right"></i>
+            </div>
+            <div
+              className="nav-content"
+              onClick={() => handleClick("/thermal/2.jpg")}
+            >
+              Turbine <i class="far fa-arrow-alt-circle-right"></i>
+            </div>
+            <div
+              className="nav-content"
+              onClick={() => handleClick("/thermal/3.webp")}
+            >
+              Exhaust Module<i class="far fa-arrow-alt-circle-right"></i>
+            </div>
+           
 
-// export default Thermal;
+          
+           
+          </div>
+        </div>
+        <div className="sub-menu1">
+          <div className="powertools_main">
+            <div className="power-img lt-animate-right">
+              <img
+                src="/thermal/1.png"
+                alt="powrtools"
+                onClick={() => handleClick("/thermal/1.png")}
+              />
+              <div>Combustion Chamber</div>
+            </div>
+            <div className="power-img lt-animate-left">
+              <img
+                src="/thermal/2.jpg"
+                alt="powrtools"
+                onClick={() => handleClick("/thermal/2.jpg")}
+              />
+              <div>Turbine</div>
+            </div>
+            <div className="power-img lt-animate-right">
+              <img
+                src="/thermal/3.webp"
+                alt="powrtools"
+                onClick={() => handleClick("/thermal/3.webp")}
+              />
+              <div>Exhaust Module</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </section>
+  );
+}
+
+export default Thermal;
