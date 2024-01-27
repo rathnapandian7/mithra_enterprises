@@ -177,7 +177,7 @@ function Contact() {
                 <h5>No:1/119 GANDHI STREET,</h5>
                 <h5>PERIYAKOTTTUMULAI,VIRUDHACHALAM TALUK,CUDDALORE DIST,</h5>
                 <h5>TAMIL NADU -606103</h5>
-                <h5>Mobile:+91-9443752043/+91-7904757806</h5>
+                <h5>Mobile:+91-8122652043/+91-7904757806</h5>
                 <h5>E-mail: meenquiry74@gmail.com</h5>
               </div>
             </div>

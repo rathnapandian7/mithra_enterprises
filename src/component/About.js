@@ -30,6 +30,12 @@ function About() {
             </p>
           </div>
         </div>
+        <div className="job-container">
+          <div className="job-involves">
+
+            
+          </div>
+        </div>
         <div className="space"></div>
         <div className="space"></div>
         <Footer />

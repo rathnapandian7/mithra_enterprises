@@ -9,12 +9,10 @@
   text-align: right;
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
   width: 70%;
   text-align: left;
 }
 .product-container {
-  border: 2px solid rgb(0, 255, 4);
   min-height: 500px;
   position: relative;
   border-top: 2px solid blue;

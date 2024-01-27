@@ -1,84 +1,169 @@
-/* .ref-container {
-  width: 100%;
-  border: 2px solid red;
+.powercontent {
+  font-size: 50px;
+  
+}
+.refini-container {
   display: flex;
-} */
-
-/* .ref-main { */
-  /* justify-content: center;
+  min-height: 500px;
+  position: relative;
+  border-top: 2px solid blue;
+  width: 100%;
+  background: linear-gradient(
+    rgba(243, 216, 216, 0.5),
+    rgba(168, 230, 137, 0.658),
+    rgba(176, 137, 230, 0.658)
+  );
+}
+.refini-inner-left,
+.refini-inner-right {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  object-fit: cover; */
-  /* width: 100%;
-  flex-direction: row;
-  border: 2px solid rgb(0, 255, 51);
+}
+.div-outer:hover {
+  transform: scale(1.01);
 }
 
-.ref-main ul {
-  display: flex;
-  overflow: hidden;
-} */
-/* .ref-main ul li img {
-  width: 1510px;
-  height: 600px;
-  opacity: 0;
-  animation: refi 24s linear infinite;
-  animation-iteration-count: infinite;
-  transition: all ease-in-out;
+.div-outer {
+  align-items: center;
+  width: 32%;
+  flex-wrap: wrap;
+}
+.animate-right {
+  bottom: 15%;
   position: relative;
+  animation: linear infinite;
+  animation-name: right;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-duration: 1s;
+  opacity: 1;
 }
 
-li :nth-child(2) {
-  animation-delay: 0s;
+.animate-left {
+  bottom: 15%;
+  position: relative;
+  animation: linear infinite;
+  animation-name: left;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-duration: 1s;
+  opacity: 1;
 }
-li :nth-child(3) {
-  animation-delay: 6s;
-}
-li:nth-child(4) {
-  animation-delay: 12s;
-}
-li :nth-child(5) {
-  animation-delay: 18s;
-}
-li :nth-child(6) {
-  animation-delay: 24s;
-}
-
-@keyframes refi {
+/* .animate ::before {
+    opacity: 0;
+  } */
+@keyframes right {
   0% {
-    opacity: 0;
-    transform: scale(100%);
-  }
-  16.66% {
-    opacity: 1;
-  }
-  33.33% {
-    opacity: 1;
-  }
-  48.66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(110%);
-  }
-} */
-/* 
-@keyframes refi {
-
-  0% {
-    transform: translateX(0px);
-  }
-  25% {
-    transform: translateX(-200px);
+    left: -100%;
   }
   50% {
-    transform: translateX(-400px);
-  }
-  75% {
-    transform: translateX(-600px);
+    left: 0%;
   }
   100% {
-    transform: translateX(-800px);
+    right: 0%;
   }
-} */
+}
+@keyframes left {
+  0% {
+    right: -100%;
+  }
+  50% {
+    right: 0%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+.div-outer img {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.div-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: gold;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  position: relative;
+  color: white;
+}
+
+.div-text {
+  transform: translateY(0%);
+  width: 100%;
+}
+
+.div-text h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(32, 32, 32);
+  /* z-index: -1; */
+  transform-origin: left;
+  transition: transform 0.2s ease-in-out;
+  transform: scaleY(1);
+  color: rgb(28, 27, 27);
+}
+.div-text h3:hover {
+  color: white;
+  transition: 0.3s;
+}
+.div-text h3:hover::before {
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  transform: scaleY(0);
+}
+
+.power-img h3 {
+  text-transform: uppercase;
+}
+
+.refin-container {
+  position: relative;
+  width: 30%;
+  align-items: center;
+  text-align: center;
+}
+.refin-inner {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
+  position: relative;
+  top: 30px;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+.refin-inner h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: blue;
+  margin: auto;
+  border-bottom: 2px solid gold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.inner-con {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  width: 100%;
+}
+.inner-con h5 {
+  padding: 7px;
+  font-weight: bold;
+}
