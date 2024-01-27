@@ -166,7 +166,7 @@
   background-color: rgb(216, 212, 212);
   /* top: 50px; */
   width: 70%;
-  line-height: 40px;
+  line-height: 30px;
 }
 .nav-menu {
   color: rgb(36, 200, 245);
@@ -189,13 +189,12 @@
   width: 33%;
 }
 .power-img img {
-  /* position: relative; */
   text-align: center;
   border-radius: 10px;
   margin: 10px auto;
   background-size: cover;
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
 }
 
