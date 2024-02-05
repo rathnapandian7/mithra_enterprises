@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import Header from "./Header";
 import Nav from "./Nav";
+import { useNavigate } from "react-router-dom";
 import "../style/Contact.css";
 
 function Contact() {
+  const navigate = useNavigate();
   const [data, setdata] = useState([
     {
       firstName: "",
@@ -33,19 +35,24 @@ function Contact() {
       website: data.website,
       message: data.message,
     };
-    axios("http://localhost:8080/enquiryNow/", {
-      method: "POST",
-      data: JSON.stringify(jsonData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
+    
+    axios("https://ec2-3-27-43-100.ap-southeast-2.compute.amazonaws.com:8080/enquiryNow/", {
+        method: "POST",
+        data: JSON.stringify(jsonData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
       .then((response) => {
-        console.log(response);
+        alert("Form Submitted Successfully");
       })
       .catch((error) => {
-        alert(error);
+        alert("Form Not Submitted Successfully Please Try Sometimes");
       });
+
+      navigate("/");
+
   };
 
   return (
@@ -167,7 +174,6 @@ function Contact() {
               <div className="form-row">
                 <div className="submit">
                   <button>Submit</button>
-
                 </div>
               </div>
             </div>

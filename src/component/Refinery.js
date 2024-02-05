@@ -24,7 +24,7 @@ function Refinery() {
         className="powercontent"
         onClick={() => handleClick("../Refi/1.webp")}
       >
-        Refinery
+       <h3>Refinery</h3>
       </div>
       <div className="refini-container">
         <div className="refin-container">

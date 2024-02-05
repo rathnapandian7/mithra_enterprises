@@ -41,8 +41,9 @@ function Request() {
       website: data.website,
       message: data.message,
     };
-
-    axios("http://localhost:8080/enquiryNow/", {
+    
+    
+    axios("https://ec2-3-27-43-100.ap-southeast-2.compute.amazonaws.com:8080/enquiryNow/", {
       method: "POST",
       data: JSON.stringify(jsonData),
       headers: {

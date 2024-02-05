@@ -1,20 +1,25 @@
 .about-container {
+  background: linear-gradient(
+    rgba(243, 216, 216, 0.5),
+    rgba(168, 230, 137, 0.658),
+    rgba(176, 137, 230, 0.658)
+  );
   /* z-index: 99; */
   width: 100%;
   position: relative;
-  top: 100px;
+  top: 50px;
   height: auto;
   border: 2px solid rgb(208, 198, 198);
-  box-shadow:-1px -3px 10px rgba(0, 0, 0, 5)
+  box-shadow: -1px -3px 10px rgba(0, 0, 0, 5);
 }
 .about-div-container {
   /* margin: auto; */
   width: 100%;
   height: auto;
   margin-bottom: 5px;
-
 }
 .abt-cpy {
+  border-bottom: 2px solid rgb(198, 71, 71);
   width: 80%;
   justify-content: flex-end;
   margin: 10px auto 40px;
@@ -32,7 +37,8 @@
 }
 .abt-profile h1 {
   text-align: center;
-  color: #273272;
+  color: rgb(50, 28, 246);
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -40,4 +46,90 @@
 .abt-content {
   margin: 20px auto 70px;
   width: 80%;
+}
+.job-container {
+  /* background-image: url(../../public/icon/bkg.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 5);
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.job-in {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+.involves {
+  color: rgb(50, 28, 246);
+  font-size: 20px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.job-content {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.job-content i {
+  line-height: 30px;
+  margin: 7px;
+  display: flex;
+  padding: 10px;
+}
+.job-content i h3 {
+  border-left: 20px;
+  text-align: center;
+}
+.ourwrk_container {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.our_wrk_in {
+  margin-top: 10px;
+  color: rgb(50, 28, 246);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
+.our_wrk_main {
+  display: flex;
+}
+
+.our_header {
+  width: 100%;
+  display: flex;
+}
+.our_head_in {
+ 
+  color: rgb(50, 28, 246);
+  font-size: 30px;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  text-align: center;
+  border:2px solid rgb(50, 28, 246);
+}
+.ref {
+  width: 100%;
+  text-align: center;
+}
+.our_header_content {
+  padding: 5px;
+  border: 2px solid red;
+  width: 100%;
+  display: flex;
+}
+.our_head_content_in {
+  border: 2px solid red;
+  width: 90%;
 }

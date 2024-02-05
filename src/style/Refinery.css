@@ -164,6 +164,7 @@
   width: 100%;
 }
 .inner-con h5 {
+  color: blue;
   padding: 7px;
   font-weight: bold;
 }
